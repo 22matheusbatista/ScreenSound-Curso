@@ -24,11 +24,25 @@ void ExibirOpcoesDoMenu()
     Console.WriteLine("Digite -1 para registrar uma banda");
 
     Console.Write("\nDigite a sua opção: ");
-    // Console.ReadLine();klk=asdaaass
+    // Console.ReadLine();
+
     string opcaoEscolhida = Console.ReadLine()!;
-    if(opcaoEscolhida == 1)
+    int opcaoEscolhidaNumerica = int.Parse(opcaoEscolhida);
+    
+    switch (opcaoEscolhidaNumerica)
     {
-        Console.WriteLine("")
+        case 1: Console.WriteLine("Voce escolheu a opção " + opcaoEscolhidaNumerica);
+            break;
+        case 2: Console.WriteLine("Voce escolheu a opção " + opcaoEscolhidaNumerica);
+            break;
+        case 3: Console.WriteLine("Voce escolheu a opção " + opcaoEscolhidaNumerica);
+            break;
+        case 4: Console.WriteLine("Voce escolheu a opção " + opcaoEscolhidaNumerica);
+            break;
+        case -1: Console.WriteLine("Voce escolheu a opção " + opcaoEscolhidaNumerica);
+            break;
+        default: Console.WriteLine("Opção Inválida!");
+            break;
     }
 }
 exibirMensagemDeBoasVindas();
