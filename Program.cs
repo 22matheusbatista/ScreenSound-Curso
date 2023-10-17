@@ -24,7 +24,7 @@ void ExibirOpcoesDoMenu()
     Console.WriteLine("Digite -1 para registrar uma banda");
 
     Console.Write("\nDigite a sua opção: ");
-    // Console.ReadLine();
+    // Console.ReadLine();klk=asdaaass
     string opcaoEscolhida = Console.ReadLine()!;
     if(opcaoEscolhida == 1)
     {
